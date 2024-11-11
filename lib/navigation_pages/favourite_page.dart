@@ -24,6 +24,6 @@ class Favourite extends StatelessWidget {
           )
         ],
       ),
-    );;
+    );
   }
 }

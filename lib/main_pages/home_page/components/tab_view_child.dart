@@ -7,14 +7,14 @@ import '../../../widget/reusable_middle_app_text.dart';
 class TabViewChild extends StatelessWidget {
   const TabViewChild({
     required this.list,
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   final List<TabBarModel> list;
 
   @override
   Widget build(BuildContext context) {
-    var size = MediaQuery.of(context).size;
+    var size = MediaQuery.sizeOf(context);
     return ListView.builder(
       itemCount: list.length,
       physics: const BouncingScrollPhysics(),

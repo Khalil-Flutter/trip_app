@@ -3,9 +3,9 @@ import 'package:google_fonts/google_fonts.dart';
 
 class MiddleAppText extends StatelessWidget {
   const MiddleAppText({
-    Key? key,
+    super.key,
     required this.text,
-  }) : super(key: key);
+  });
 
   final String text;
 
@@ -16,7 +16,7 @@ class MiddleAppText extends StatelessWidget {
       padding: EdgeInsets.only(top: height * 0.015),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children:   [
+        children: [
           AppText(
             text: text,
             size: 19,
@@ -38,10 +38,10 @@ class MiddleAppText extends StatelessWidget {
 class AppText extends StatelessWidget {
   const AppText(
       {super.key,
-        required this.text,
-        required this.size,
-        required this.color,
-        required this.fontWeight});
+      required this.text,
+      required this.size,
+      required this.color,
+      required this.fontWeight});
 
   final String text;
   final double size;
